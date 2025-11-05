@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: pacman-02
+  namespace: pacman-02-argocd
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
+spec:
+  clusterResourceWhitelist:
+  - group: '*'
+    kind: '*'
+  destinations:
+  - namespace: '*'
+    server: '*'
+  sourceRepos:
+  - '*'
+  sourceNamespaces: 
+  - pacman-02-dev-*
+  roles:
+  - name: developer
+    groups: 
+    - pacman-02
+    policies:
+    - p, proj:pacman-02:developer, applications, get, pacman-02/*, allow
+    - p, proj:pacman-02:developer, applications, sync, pacman-02/*, allow  
