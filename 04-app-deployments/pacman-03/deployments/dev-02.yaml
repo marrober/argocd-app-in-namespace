@@ -11,7 +11,7 @@ spec:
   source:
     path: pacman-03/dev-02
     targetRevision: main
-    repoURL: https://github.com/marrober/argocd-app-in-namespaces.git
+    repoURL: https://github.com/marrober/argocd-app-in-namespace.git
   syncPolicy:
     automated: 
       prune: true 

@@ -1,7 +1,7 @@
 # Create the argocd instance using the command : 
 
 ````bash
-oc apply -k conf/
+oc apply -k 01-config/
 ````
 
 ## Get the route and secret :
