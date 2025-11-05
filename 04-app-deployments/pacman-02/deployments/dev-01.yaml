@@ -9,7 +9,7 @@ spec:
     namespace: pacman-02-dev-01
     server: https://kubernetes.default.svc
   source:
-    path: pacman-02/dev-01
+    path: 04-app-deloyments/pacman-02/dev-01
     targetRevision: main
     repoURL: https://github.com/marrober/argocd-app-in-namespace.git
   syncPolicy:
