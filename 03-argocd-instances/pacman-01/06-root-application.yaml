@@ -11,7 +11,7 @@ spec:
     namespace: pacman-01-argocd
     server: https://kubernetes.default.svc
   source:
-    path: 04-app-deployments/pacman-01
+    path: 04-app-deployments/pacman-01/deployments
     targetRevision: main
     repoURL: https://github.com/marrober/argocd-app-in-namespace.git
   syncPolicy:
